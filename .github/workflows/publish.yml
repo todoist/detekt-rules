@@ -76,7 +76,7 @@ jobs:
           printf 'content=%s\n' "$content" >> "$GITHUB_OUTPUT"
 
       - name: Notify release result
-        uses: Doist/actions/post-comms-thread-comment@main
+        uses: todoist/actions/post-comms-thread-comment@main
         with:
           comms-client-id: ${{ secrets.COMMS_DOISTBOT_CLIENT_ID }}
           comms-client-secret: ${{ secrets.COMMS_DOISTBOT_CLIENT_SECRET }}
